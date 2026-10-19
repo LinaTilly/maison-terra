@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maison Terra | Artisan Gemstone Jewellery</title>
+  <meta name="description" content="A portfolio concept for an elegant Canadian artisan jewellery brand.">
+  <style>
+    :root {
+      --cream:#f7f3ec;
+      --white:#fffdf9;
+      --green:#304b40;
+      --gold:#a88a60;
+      --ink:#302e2a;
+      --muted:#77736c;
+    }
+    * {box-sizing:border-box}
+    html {scroll-behavior:smooth}
+    body {margin:0;background:var(--cream);color:var(--ink);font-family:Georgia,serif}
+    a {color:inherit;text-decoration:none}
+    img {display:block;width:100%;object-fit:cover}
+    .announcement {background:var(--green);color:white;text-align:center;padding:12px;font:11px Arial;letter-spacing:2px}
+    header {background:var(--white);padding:23px 6%;display:flex;align-items:center;justify-content:space-between;gap:15px}
+    .logo {font-size:24px;letter-spacing:5px}
+    .logo small {display:block;font:9px Arial;letter-spacing:3px;text-align:center;color:var(--gold);margin-top:8px}
+    nav {display:flex;gap:24px;font:12px Arial}
+    nav a:hover {color:var(--gold)}
+    .hero {display:grid;grid-template-columns:1fr 1fr;min-height:560px}
+    .hero-copy {display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:65px 12%}
+    .eyebrow {font:11px Arial;letter-spacing:3px;text-transform:uppercase;color:var(--gold)}
+    h1 {font-weight:normal;font-size:clamp(42px,5vw,76px);line-height:1.08;margin:23px 0}
+    h2 {font-weight:normal;font-size:clamp(30px,4vw,48px);margin:13px 0}
+    p {font:15px/1.8 Arial;color:var(--muted)}
+    .hero img {height:100%;min-height:480px}
+    .btn {background:var(--green);color:white;padding:16px 27px;display:inline-block;font:11px Arial;letter-spacing:2px;text-transform:uppercase;border:1px solid var(--green);cursor:pointer}
+    .btn:hover {background:#49685a}
+    section {padding:75px 6%}
+    .center {text-align:center}
+    .section-intro {max-width:650px;margin:0 auto 35px}
+    .grid {display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+    .product img {height:330px;background:#e5ded4}
+    .product h3 {font-size:19px;font-weight:normal;margin:18px 0 6px}
+    .price {font:13px Arial;color:var(--gold)}
+    .holiday {background:#eae5db}
+    .feature {display:grid;grid-template-columns:1fr 1fr;background:var(--white)}
+    .feature img {height:510px}
+    .feature-copy {padding:65px 12%;display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
+    .trust {background:var(--green);color:#fff;text-align:center}
+    .trust p {color:#deded3}
+    .trust strong {display:block;font-size:55px;font-weight:normal;margin:15px}
+    .events {background:var(--white);text-align:center}
+    .event-grid {display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:30px auto;max-width:700px}
+    .event {border:1px solid #d6d0c4;padding:28px}
+    .event b {font-size:23px;font-weight:normal}
+    .newsletter {text-align:center;background:#eee8df}
+    .newsletter form {display:flex;gap:8px;max-width:500px;margin:28px auto 12px}
+    input {flex:1;min-width:0;padding:15px;border:1px solid #cfc4b6;background:white;font:14px Arial}
+    .notice {font:11px Arial;color:var(--muted)}
+    footer {background:#243e33;color:white;text-align:center;padding:38px 18px}
+    footer p {color:#ddd7c9}
+    .demo {font:11px Arial;letter-spacing:1px;color:#e0c99a}
+    @media(max-width:750px) {
+      header {flex-direction:column}
+      nav {gap:15px;flex-wrap:wrap;justify-content:center}
+      .hero,.feature {grid-template-columns:1fr}
+      .hero-copy {padding:65px 7%}
+      .hero img {min-height:300px;height:370px}
+      .grid {grid-template-columns:1fr 1fr}
+      .product img {height:240px}
+      .feature img {height:340px}
+      .feature-copy {padding:45px 7%}
+      section {padding:55px 5%}
+    }
+    @media(max-width:440px) {
+      .grid,.event-grid {grid-template-columns:1fr}
+      .product img {height:350px}
+      .newsletter form {flex-direction:column}
+      .logo {font-size:21px}
+    }
+  </style>
+</head>
+<body>
+
+<div class="announcement">
+  THE HOLIDAY EDIT · THOUGHTFUL GIFTS, BEAUTIFULLY MADE
+</div>
+
+<header>
+  <a href="#" class="logo">
+    MAISON TERRA
+    <small>GEMSTONE ATELIER · TORONTO</small>
+  </a>
+  <nav>
+    <a href="#collection">Collections</a>
+    <a href="#holiday">Holiday Gifts</a>
+    <a href="#story">Our Story</a>
+    <a href="#newsletter">Journal</a>
+  </nav>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="eyebrow">Naturally beautiful · Carefully created</span>
+      <h1>Wear Your<br><em>Own Story.</em></h1>
+      <p>Handcrafted gemstone jewellery for women who believe that true elegance is personal.</p>
+      <a class="btn" href="#collection">Explore the Collection</a>
+    </div>
+    <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=1200&auto=format&fit=crop&q=85" alt="Elegant jewellery">
+  </div>
+
+  <section id="collection">
+    <div class="center section-intro">
+      <span class="eyebrow">The art of natural beauty</span>
+      <h2>Our Signature Pieces</h2>
+      <p>Pieces inspired by nature, created for your individuality.</p>
+    </div>
+    <div class="grid">
+      <article class="product">
+        <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=800&auto=format&fit=crop&q=85" alt="Gemstone jewellery">
+        <h3>The Gemstone Edit</h3>
+        <div class="price">From CA$65</div>
+      </article>
+      <article class="product">
+        <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800&auto=format&fit=crop&q=85" alt="Elegant necklace">
+        <h3>Everyday Elegance</h3>
+        <div class="price">From CA$48</div>
+      </article>
+      <article class="product">
+        <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=800&auto=format&fit=crop&q=85" alt="Fine jewellery">
+        <h3>Statement Collection</h3>
+        <div class="price">From CA$110</div>
+      </article>
+    </div>
+  </section>
+
+  <section class="holiday" id="holiday">
+    <div class="center section-intro">
+      <span class="eyebrow">The holiday collection · 2026</span>
+      <h2>Gifts with Meaning</h2>
+      <p>A little something extraordinary for someone special. Discover thoughtful treasures for the festive season.</p>
+    </div>
+    <div class="grid">
+      <article class="product">
+        <img src="https://images.unsplash.com/photo-1611085583191-a3b181a88401?w=800&auto=format&fit=crop&q=85" alt="Holiday jewellery">
+        <h3>Gifts Under CA$75</h3>
+        <div class="price">Thoughtful little treasures</div>
+      </article>
+      <article class="product">
+        <img src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=800&auto=format&fit=crop&q=85" alt="Jewellery gift">
+        <h3>Special Gift Sets</h3>
+        <div class="price">Beautifully paired pieces</div>
+      </article>
+      <article class="product">
+        <img src="https://images.unsplash.com/photo-1630019852942-f89202989a59?w=800&auto=format&fit=crop&q=85" alt="Artisan jewellery">
+        <h3>Holiday Statement Pieces</h3>
+        <div class="price">Celebrate your style</div>
+      </article>
+    </div>
+  </section>
+
+  <div class="feature" id="story">
+    <img src="https://images.unsplash.com/photo-1450297350677-623de575f31c?w=1100&auto=format&fit=crop&q=85" alt="Artisan studio">
+    <div class="feature-copy">
+      <span class="eyebrow">The Maison Terra philosophy</span>
+      <h2>Made Slowly.<br>Worn Beautifully.</h2>
+      <p>We believe jewellery should be more than an accessory. Inspired by the natural beauty of gemstones, each design celebrates character, individuality and the details that make you unique.</p>
+      <a class="btn" href="#newsletter">Discover Our Journal</a>
+    </div>
+  </div>
+
+  <section class="trust">
+    <span class="eyebrow" style="color:#d6ba88">Independent artisan jewellery</span>
+    <strong>Natural Beauty</strong>
+    <p>Thoughtfully designed · Inspired by nature · Made to be treasured</p>
+  </section>
+
+  <section class="events" id="events">
+    <span class="eyebrow">Meet us in person</span>
+    <h2>Holiday Artisan Events</h2>
+    <p>Discover jewellery up close and find a special gift.</p>
+    <div class="event-grid">
+      <div class="event">
+        <b>November 2026</b>
+        <p>Holiday Artisan Preview</p>
+        <span class="eyebrow">Toronto · Demo Event</span>
+      </div>
+      <div class="event">
+        <b>December 2026</b>
+        <p>Winter Jewellery Showcase</p>
+        <span class="eyebrow">Toronto · Demo Event</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter" id="newsletter">
+    <span class="eyebrow">Join the Maison Terra letter</span>
+    <h2>A Little Beauty in Your Inbox</h2>
+    <p>Discover new collections, holiday gift inspiration and exclusive previews.</p>
+    <form id="subscribe">
+      <input type="email" id="email" placeholder="Your email address" required>
+      <button class="btn" type="submit">Join the List</button>
+    </form>
+    <div id="message" class="notice" aria-live="polite"></div>
+    <p class="notice">Portfolio demonstration only. No information is submitted or stored.</p>
+  </section>
+</main>
+
+<footer>
+  <div class="logo">MAISON TERRA</div>
+  <p>Artisan Gemstone Jewellery · Toronto, Canada</p>
+  <div class="demo">FICTIONAL BRAND · WEB DESIGN PORTFOLIO CONCEPT</div>
+</footer>
+
+<script>
+  document.getElementById('subscribe').addEventListener('submit', function(e) {
+    e.preventDefault();
+    document.getElementById('message').textContent =
+      'Thank you! This is a portfolio demo, so no email has been sent.';
+    this.reset();
+  });
+</script>
+
+</body>
+</html>
